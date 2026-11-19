@@ -1,0 +1,246 @@
+{
+  "erstellt": "2026-11-18T21:03:07.642Z",
+  "quelle": "Deutsch lernen durch Hören – www.einfachdeutschlernen.com",
+  "gruppen": [
+    {
+      "id": "feste",
+      "titel": "Feste feiern",
+      "emoji": "🎉",
+      "farbe": "#FFB547"
+    },
+    {
+      "id": "schule",
+      "titel": "Schule & Zuhause",
+      "emoji": "🏠",
+      "farbe": "#6EC6FF"
+    },
+    {
+      "id": "tiere",
+      "titel": "Tiere",
+      "emoji": "🐾",
+      "farbe": "#8BD17C"
+    },
+    {
+      "id": "draussen",
+      "titel": "Draußen unterwegs",
+      "emoji": "🌳",
+      "farbe": "#FF8A80"
+    },
+    {
+      "id": "nacht",
+      "titel": "Gute Nacht",
+      "emoji": "🌙",
+      "farbe": "#B39DDB"
+    }
+  ],
+  "geschichten": [
+    {
+      "nr": 348,
+      "gruppe": "feste",
+      "emoji": "🎅",
+      "titel": "Der Weihnachtsmann kommt durch den Schornstein!",
+      "audio": "https://traffic.megaphone.fm/APO9114250141.mp3",
+      "sekunden": 240
+    },
+    {
+      "nr": 301,
+      "gruppe": "feste",
+      "emoji": "🥾",
+      "titel": "Nikolaus",
+      "audio": "https://traffic.megaphone.fm/APO8221501844.mp3",
+      "sekunden": 139
+    },
+    {
+      "nr": 257,
+      "gruppe": "feste",
+      "emoji": "🎄",
+      "titel": "Heiligabend",
+      "audio": "https://traffic.megaphone.fm/APO9514102973.mp3",
+      "sekunden": 144
+    },
+    {
+      "nr": 78,
+      "gruppe": "feste",
+      "emoji": "🎁",
+      "titel": "Weihnachten im Schuhkarton",
+      "audio": "https://traffic.megaphone.fm/APO9463034041.mp3",
+      "sekunden": 90
+    },
+    {
+      "nr": 73,
+      "gruppe": "feste",
+      "emoji": "🐣",
+      "titel": "Ostern",
+      "audio": "https://traffic.megaphone.fm/APO7233688059.mp3",
+      "sekunden": 121
+    },
+    {
+      "nr": 347,
+      "gruppe": "feste",
+      "emoji": "🎂",
+      "titel": "Geburtstagsfeier",
+      "audio": "https://traffic.megaphone.fm/APO4794755334.mp3",
+      "sekunden": 222
+    },
+    {
+      "nr": 292,
+      "gruppe": "feste",
+      "emoji": "🎈",
+      "titel": "Geburtstagsüberraschung",
+      "audio": "https://traffic.megaphone.fm/APO8096985335.mp3",
+      "sekunden": 215
+    },
+    {
+      "nr": 323,
+      "gruppe": "feste",
+      "emoji": "🎭",
+      "titel": "Die besten Kostüme",
+      "audio": "https://traffic.megaphone.fm/APO9201068963.mp3",
+      "sekunden": 174
+    },
+    {
+      "nr": 346,
+      "gruppe": "schule",
+      "emoji": "🎪",
+      "titel": "Schulfest",
+      "audio": "https://traffic.megaphone.fm/APO2946040492.mp3",
+      "sekunden": 246
+    },
+    {
+      "nr": 285,
+      "gruppe": "schule",
+      "emoji": "🚌",
+      "titel": "Chaos im Schulbus",
+      "audio": "https://traffic.megaphone.fm/APO3557351486.mp3",
+      "sekunden": 243
+    },
+    {
+      "nr": 342,
+      "gruppe": "schule",
+      "emoji": "⏰",
+      "titel": "Die beste Ausrede fürs Zuspätkommen",
+      "audio": "https://traffic.megaphone.fm/APO9473516101.mp3",
+      "sekunden": 335
+    },
+    {
+      "nr": 341,
+      "gruppe": "schule",
+      "emoji": "🎮",
+      "titel": "Drei Wochen Computerverbot",
+      "audio": "https://traffic.megaphone.fm/APO9044272795.mp3",
+      "sekunden": 216
+    },
+    {
+      "nr": 322,
+      "gruppe": "schule",
+      "emoji": "🧹",
+      "titel": "Operation: Zimmer retten!",
+      "audio": "https://traffic.megaphone.fm/APO7802913770.mp3",
+      "sekunden": 194
+    },
+    {
+      "nr": 117,
+      "gruppe": "schule",
+      "emoji": "📚",
+      "titel": "Der Bücherwurm",
+      "audio": "https://traffic.megaphone.fm/APO2458119430.mp3",
+      "sekunden": 243
+    },
+    {
+      "nr": 42,
+      "gruppe": "schule",
+      "emoji": "🎒",
+      "titel": "Schultüten",
+      "audio": "https://traffic.megaphone.fm/APO6758140304.mp3",
+      "sekunden": 201
+    },
+    {
+      "nr": 335,
+      "gruppe": "tiere",
+      "emoji": "🐕",
+      "titel": "Balu in der Hundepension",
+      "audio": "https://traffic.megaphone.fm/APO7623625656.mp3",
+      "sekunden": 227
+    },
+    {
+      "nr": 166,
+      "gruppe": "tiere",
+      "emoji": "🐼",
+      "titel": "Amelie im Tiergarten",
+      "audio": "https://traffic.megaphone.fm/APO5338995148.mp3",
+      "sekunden": 193
+    },
+    {
+      "nr": 9,
+      "gruppe": "tiere",
+      "emoji": "🐱",
+      "titel": "Ein Kätzchen adoptieren",
+      "audio": "https://traffic.megaphone.fm/APO9956228039.mp3",
+      "sekunden": 201
+    },
+    {
+      "nr": 218,
+      "gruppe": "tiere",
+      "emoji": "🐶",
+      "titel": "Angst vor dem Nachbarshund",
+      "audio": "https://traffic.megaphone.fm/APO2470304931.mp3",
+      "sekunden": 159
+    },
+    {
+      "nr": 313,
+      "gruppe": "draussen",
+      "emoji": "🎈",
+      "titel": "Fahrt mit dem Heißluftballon",
+      "audio": "https://traffic.megaphone.fm/APO1510078041.mp3",
+      "sekunden": 327
+    },
+    {
+      "nr": 303,
+      "gruppe": "draussen",
+      "emoji": "🛶",
+      "titel": "Kanufahren im Spreewald",
+      "audio": "https://traffic.megaphone.fm/APO5696642231.mp3",
+      "sekunden": 141
+    },
+    {
+      "nr": 353,
+      "gruppe": "draussen",
+      "emoji": "🧺",
+      "titel": "Picknick im Wald",
+      "audio": "https://traffic.megaphone.fm/APO2659124177.mp3",
+      "sekunden": 163
+    },
+    {
+      "nr": 253,
+      "gruppe": "draussen",
+      "emoji": "🌊",
+      "titel": "Ebbe und Flut",
+      "audio": "https://traffic.megaphone.fm/APO4295960594.mp3",
+      "sekunden": 186
+    },
+    {
+      "nr": 148,
+      "gruppe": "draussen",
+      "emoji": "🚢",
+      "titel": "Leas Ferien auf dem Kreuzfahrtschiff",
+      "audio": "https://traffic.megaphone.fm/APO2763886540.mp3",
+      "sekunden": 708
+    },
+    {
+      "nr": 252,
+      "gruppe": "draussen",
+      "emoji": "🏰",
+      "titel": "Amy und das Mittelalter",
+      "audio": "https://traffic.megaphone.fm/APO6807360566.mp3",
+      "sekunden": 271
+    },
+    {
+      "nr": 113,
+      "gruppe": "nacht",
+      "emoji": "🐑",
+      "titel": "Schafe zählen zum Einschlafen",
+      "audio": "https://traffic.megaphone.fm/APO6078974791.mp3",
+      "sekunden": 177
+    }
+  ]
+}
