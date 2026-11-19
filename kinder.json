@@ -1,5 +1,5 @@
 {
-  "erstellt": "2026-11-18T21:03:07.642Z",
+  "erstellt": "2026-11-19T14:32:43.420Z",
   "quelle": "Deutsch lernen durch Hören – www.einfachdeutschlernen.com",
   "gruppen": [
     {
@@ -155,6 +155,14 @@
       "sekunden": 201
     },
     {
+      "nr": 372,
+      "gruppe": "schule",
+      "emoji": "🎧",
+      "titel": "Voll Vertrauen",
+      "audio": "https://traffic.megaphone.fm/APO6434657939.mp3",
+      "sekunden": 256
+    },
+    {
       "nr": 335,
       "gruppe": "tiere",
       "emoji": "🐕",
@@ -241,6 +249,14 @@
       "titel": "Schafe zählen zum Einschlafen",
       "audio": "https://traffic.megaphone.fm/APO6078974791.mp3",
       "sekunden": 177
+    },
+    {
+      "nr": 363,
+      "gruppe": "nacht",
+      "emoji": "🎧",
+      "titel": "Angst bei Vollmond",
+      "audio": "https://traffic.megaphone.fm/APO9831940519.mp3",
+      "sekunden": 232
     }
   ]
 }
