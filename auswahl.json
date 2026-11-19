@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Hier wählst du aus, welche Folgen in der Hörkiste erscheinen. nr = Folgennummer im Podcast (#123). Danach Raycast „Hörkiste · Deploy“: baut kinder.json neu und veröffentlicht.",
+  "_hinweis": "Gepflegt in der Hörkiste unter „Für Erwachsene → Geschichten auswählen“, veröffentlicht mit Raycast „Hörkiste · Deploy“. nr = Folgennummer im Podcast (#123), gruppe = eine der Gruppen-IDs.",
   "gruppen": [
     { "id": "feste",    "titel": "Feste feiern",      "emoji": "🎉", "farbe": "#FFB547" },
     { "id": "schule",   "titel": "Schule & Zuhause",  "emoji": "🏠", "farbe": "#6EC6FF" },

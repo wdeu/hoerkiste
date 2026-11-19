@@ -1,5 +1,5 @@
 // Hält die Oberfläche offline bereit. Audio wird nicht gespeichert, sondern immer aus dem Podcast-Feed gestreamt.
-const CACHE = "hoerkiste-v1";
+const CACHE = "hoerkiste-v2";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "kinder.json",
                "icons/icon-180.png", "icons/icon-192.png", "icons/icon-512.png"];
 

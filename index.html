@@ -159,6 +159,68 @@
   .gross-knopf.zwei { background: #fff; color: var(--ink); box-shadow: 0 6px 0 #E3D3BF; }
   .gross-knopf:active { transform: translateY(4px); box-shadow: 0 2px 0 #D9582A; }
 
+  [hidden] { display: none !important; }
+
+  /* ---------- Für Erwachsene: Geschichten auswählen ---------- */
+  #vorschauBand {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    margin: -8px 4px 18px; padding: 10px 14px; border-radius: 16px;
+    background: var(--ink); color: #fff; font-size: 15px; font-weight: 700;
+  }
+  #vorschauBand button { background: #fff; color: var(--ink); padding: 8px 12px; border-radius: 12px; font-weight: 800; white-space: nowrap; }
+
+  #tor { position: fixed; inset: 0; z-index: 30; display: none; place-items: center; background: rgba(58,46,37,.45); padding: 20px; }
+  #tor.offen { display: grid; }
+  .tor-box { background: #fff; border-radius: 22px; padding: 22px; width: min(340px, 100%); text-align: center; }
+  .tor-box p { margin: 0 0 12px; font-size: 19px; font-weight: 800; }
+  .tor-box input { width: 100%; font: inherit; font-size: 24px; text-align: center; padding: 10px; border-radius: 14px; border: 2px solid #E9DCCB; }
+  .tor-box .reihe { display: flex; gap: 10px; margin-top: 14px; }
+  .tor-box .reihe button { flex: 1; min-height: 48px; border-radius: 14px; font-weight: 800; background: #F3EADF; }
+  .tor-box.falsch { animation: wackel .3s; }
+  @keyframes wackel { 25% { transform: translateX(-8px); } 75% { transform: translateX(8px); } }
+  button.primaer { background: var(--accent); color: #fff; }
+
+  #studio { position: fixed; inset: 0; z-index: 20; display: none; flex-direction: column; background: var(--bg); -webkit-user-select: text; user-select: text; }
+  #studio.offen { display: flex; }
+  .s-oben {
+    display: grid; gap: 10px; background: var(--bg); border-bottom: 2px solid #EFE2D0;
+    padding: max(12px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) 10px max(14px, env(safe-area-inset-left));
+  }
+  .s-kopf { display: flex; align-items: center; gap: 12px; }
+  .s-kopf .s-zu { min-height: 44px; padding: 0 16px; border-radius: 999px; background: #fff; font-weight: 800; box-shadow: 0 2px 8px rgba(0,0,0,.07); }
+  .s-titel { display: grid; line-height: 1.25; }
+  .s-titel strong { font-size: 19px; }
+  .s-titel span { font-size: 14px; color: var(--soft); font-weight: 700; }
+  #suche { width: 100%; font: inherit; font-size: 16px; padding: 10px 14px; border-radius: 14px; border: 2px solid #E9DCCB; background: #fff; }
+  .s-filter { display: flex; gap: 6px; }
+  .s-filter button { flex: 1; min-height: 38px; border-radius: 12px; background: #fff; font-size: 14px; font-weight: 800; border: 2px solid #E9DCCB; }
+  .s-filter button.an { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .s-aktion { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 14px; background: #FFE6D6; font-size: 14px; font-weight: 700; }
+  .s-aktion span { flex: 1 1 100%; }
+  .s-aktion button { min-height: 38px; padding: 0 12px; border-radius: 12px; background: #fff; font-size: 14px; font-weight: 800; }
+  .s-aktion button.primaer { background: var(--accent); color: #fff; }
+  .s-info { margin: 0; font-size: 14px; font-weight: 700; color: #2E7D32; line-height: 1.4; }
+  #katalog {
+    flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch;
+    padding: 8px max(10px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(10px, env(safe-area-inset-left));
+  }
+  .zeile { display: flex; gap: 10px; align-items: flex-start; padding: 12px 10px; border-radius: 16px; margin-bottom: 6px; background: #fff; border: 2px solid transparent; }
+  .zeile.an { border-color: var(--accent); background: #FFF9F4; }
+  .zeile .haken { flex: none; width: 36px; height: 36px; border-radius: 10px; border: 2px solid #D9CBB8; display: grid; place-items: center; font-size: 20px; font-weight: 900; color: #fff; }
+  .zeile.an .haken { background: var(--accent); border-color: var(--accent); }
+  .zeile .info { flex: 1; min-width: 0; }
+  .zeile .kopf { font-size: 16px; font-weight: 800; line-height: 1.25; }
+  .zeile .nr { color: var(--soft); font-weight: 700; }
+  .zeile .km { font-size: 13px; color: var(--soft); font-weight: 700; margin-top: 2px; }
+  .zeile .text { font-size: 13px; color: #6B5B4D; line-height: 1.4; margin-top: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; }
+  .zeile .text.lang { -webkit-line-clamp: unset; display: block; }
+  .zeile .edit { display: grid; grid-template-columns: 64px 1fr; gap: 8px; margin-top: 10px; }
+  .zeile .edit input, .zeile .edit select { font: inherit; font-size: 16px; padding: 8px 10px; border-radius: 12px; border: 2px solid #E9DCCB; background: #fff; min-width: 0; color: var(--ink); }
+  .zeile .edit .e-emoji { text-align: center; font-size: 22px; padding: 4px; }
+  .zeile .edit .e-titel { grid-column: 1 / -1; font-weight: 700; }
+  .zeile .probe { flex: none; width: 40px; height: 40px; border-radius: 50%; background: #F3EADF; font-size: 15px; }
+  .leer { text-align: center; color: var(--soft); font-weight: 700; padding: 40px 16px; line-height: 1.4; }
+
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style>
 </head>
@@ -172,6 +234,8 @@
   </div>
 </header>
 
+<div id="vorschauBand" hidden><span>👀 Vorschau des Entwurfs · nur auf diesem Gerät</span><button id="vorschauEnde">Zurück zur Auswahl</button></div>
+
 <main id="liste"><div class="status">Einen Moment … 📦</div></main>
 
 <details class="eltern">
@@ -182,6 +246,7 @@
   <p><strong>Aufs iPhone holen:</strong> In Safari auf „Teilen“ tippen → „Zum Home-Bildschirm“. Dann startet die Hörkiste wie eine App, ohne Adressleiste.</p>
   <p><strong>Tipp:</strong> Mit „Geführter Zugriff“ (Einstellungen → Bedienungshilfen) bleibt das Kind in der Hörkiste.</p>
   <p id="stand"></p>
+  <button class="reset" id="auswaehlen">Geschichten auswählen</button>
   <button class="reset" id="reset">Sterne zurücksetzen</button>
 </details>
 
@@ -215,6 +280,35 @@
   </div>
 </div>
 
+<div id="tor" role="dialog" aria-modal="true" aria-labelledby="torFrage">
+  <form class="tor-box" id="torForm">
+    <p id="torFrage"></p>
+    <input id="torAntwort" inputmode="numeric" pattern="[0-9]*" autocomplete="off" aria-label="Ergebnis">
+    <div class="reihe"><button type="button" id="torAbbruch">Abbrechen</button><button type="submit" class="primaer">Weiter</button></div>
+  </form>
+</div>
+
+<div id="studio" role="dialog" aria-modal="true" aria-label="Geschichten auswählen">
+  <div class="s-oben">
+    <div class="s-kopf">
+      <button class="s-zu" id="studioZu">← Fertig</button>
+      <div class="s-titel"><strong>Geschichten auswählen</strong><span id="anzahl"></span></div>
+    </div>
+    <input id="suche" type="search" placeholder="Suchen: Titel oder #Nummer" autocomplete="off" enterkeyhint="search">
+    <div class="s-filter" role="group" aria-label="Filter">
+      <button data-f="alle" class="an">Alle</button><button data-f="an">In der Kiste</button><button data-f="aus">Nicht drin</button>
+    </div>
+    <div class="s-aktion" id="entwurfHinweis" hidden>
+      <span>Geändert, aber noch nicht veröffentlicht.</span>
+      <button id="vorschauBtn">Vorschau</button>
+      <button id="export" class="primaer">auswahl.json laden</button>
+      <button id="verwerfen">Verwerfen</button>
+    </div>
+    <p class="s-info" id="exportHinweis" hidden>✓ auswahl.json liegt in Downloads. Jetzt Raycast „Hörkiste · Deploy“ starten.</p>
+  </div>
+  <div id="katalog"></div>
+</div>
+
 <audio id="audio" preload="none"></audio>
 
 <script>
@@ -236,19 +330,22 @@
     return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
   };
   const minuten = (s) => Math.max(1, Math.round(s / 60)) + " Min";
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  let katalog = null, entwurf = null, vorschau = null;
 
   let daten = null, aktuell = null, laedt = false;
 
   // ---------- Startseite ----------
   function zeigeListe() {
+    const D = vorschau || daten;
     const main = $("liste");
     main.innerHTML = "";
-    for (const g of daten.gruppen) {
-      const eintraege = daten.geschichten.filter((x) => x.gruppe === g.id);
+    for (const g of D.gruppen) {
+      const eintraege = D.geschichten.filter((x) => x.gruppe === g.id);
       if (!eintraege.length) continue;
       const sec = document.createElement("section");
       sec.style.setProperty("--g", g.farbe);
-      sec.innerHTML = `<h2><span aria-hidden="true">${g.emoji}</span>${g.titel}</h2><div class="grid"></div>`;
+      sec.innerHTML = `<h2><span aria-hidden="true">${esc(g.emoji)}</span>${esc(g.titel)}</h2><div class="grid"></div>`;
       const grid = sec.querySelector(".grid");
       for (const x of eintraege) {
         const b = document.createElement("button");
@@ -257,8 +354,8 @@
         const weiter = !gehoert && speicher.stelle[x.nr] > 10;
         b.innerHTML =
           `${gehoert ? '<span class="star" aria-label="schon gehört">⭐</span>' : ""}
-           <div class="emo" aria-hidden="true">${x.emoji}</div>
-           <div class="t">${x.titel}</div>
+           <div class="emo" aria-hidden="true">${esc(x.emoji)}</div>
+           <div class="t">${esc(x.titel)}</div>
            <div class="meta">${weiter ? '<span class="weiter">▶ weiter</span>' : ""}<span>${minuten(x.sekunden)}</span></div>`;
         b.addEventListener("click", () => oeffne(x, g));
         grid.appendChild(b);
@@ -266,7 +363,7 @@
       main.appendChild(sec);
     }
     const n = Object.keys(speicher.gehoert).length;
-    $("stand").textContent = `${daten.geschichten.length} Geschichten in der Kiste · ${n} schon gehört · Stand ${new Date(daten.erstellt).toLocaleDateString("de-DE")}`;
+    $("stand").textContent = `${D.geschichten.length} Geschichten in der Kiste · ${n} schon gehört · Stand ${new Date(D.erstellt).toLocaleDateString("de-DE")}`;
   }
 
   // ---------- Player ----------
@@ -404,6 +501,209 @@
     } catch (e) {}
   }
   document.addEventListener("visibilitychange", () => { if (document.hidden) merkeStelle(); });
+
+  // ---------- Für Erwachsene: Geschichten auswählen ----------
+  // Entwurf liegt nur auf diesem Gerät (localStorage). Veröffentlicht wird über
+  // „auswahl.json laden“ → Downloads → Raycast „Hörkiste · Deploy“.
+  const ENTWURF_KEY = "hoerkiste.entwurf";
+  const HINWEIS = "Gepflegt in der Hörkiste unter „Für Erwachsene → Geschichten auswählen“, veröffentlicht mit Raycast „Hörkiste · Deploy“. nr = Folgennummer im Podcast (#123), gruppe = eine der Gruppen-IDs.";
+  const tor = $("tor"), studio = $("studio");
+  const probe = new Audio(); probe.preload = "none";
+  let probeNr = null, filter = "alle", torOk = false;
+
+  const kurzTitel = (t) => t.replace(/#\s*\d+/g, " ").replace(/\s+/g, " ").replace(/^[\s\-–—:|·.]+|[\s\-–—:|·.]+$/g, "").trim();
+  const ausDaten = () => daten.geschichten.map(({ nr, gruppe, emoji, titel }) => ({ nr, gruppe, emoji, titel }));
+  const geaendert = () => JSON.stringify(entwurf) !== JSON.stringify(ausDaten());
+
+  function ladeEntwurf() {
+    let e = null;
+    try { e = JSON.parse(localStorage.getItem(ENTWURF_KEY) || "null"); } catch (_) {}
+    entwurf = Array.isArray(e) ? e : ausDaten();
+  }
+  function sichereEntwurf() {
+    try {
+      if (geaendert()) localStorage.setItem(ENTWURF_KEY, JSON.stringify(entwurf));
+      else localStorage.removeItem(ENTWURF_KEY);
+    } catch (e) {}
+    $("exportHinweis").hidden = true;
+    aktualisiereKopf();
+  }
+  function aktualisiereKopf() {
+    $("anzahl").textContent = `${entwurf.length} in der Kiste · ${katalog.length} Folgen im Podcast`;
+    $("entwurfHinweis").hidden = !geaendert();
+  }
+
+  // Sperre: kleine Rechenaufgabe, damit Kinder nicht hineinstolpern (kein Schutz, nur ein Zaun)
+  function oeffneTor() {
+    if (torOk) return oeffneStudio();
+    const a = 12 + Math.floor(Math.random() * 18), b = 12 + Math.floor(Math.random() * 8);
+    tor.dataset.loesung = a * b;
+    $("torFrage").textContent = `Kurze Frage für Erwachsene: ${a} × ${b} = ?`;
+    $("torAntwort").value = "";
+    tor.classList.add("offen");
+    setTimeout(() => $("torAntwort").focus(), 50);
+  }
+  $("torForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    if ($("torAntwort").value.trim() === tor.dataset.loesung) {
+      torOk = true; tor.classList.remove("offen"); oeffneStudio();
+    } else {
+      const box = $("torForm"); box.classList.remove("falsch"); void box.offsetWidth; box.classList.add("falsch");
+      $("torAntwort").value = "";
+    }
+  });
+  $("torAbbruch").addEventListener("click", () => tor.classList.remove("offen"));
+
+  async function oeffneStudio() {
+    if (!daten) return;
+    studio.classList.add("offen");
+    document.body.style.overflow = "hidden";
+    if (!katalog) {
+      $("katalog").innerHTML = '<p class="leer">Lade alle Folgen …</p>';
+      try {
+        const r = await fetch("katalog.json", { cache: "no-cache" });
+        if (!r.ok) throw new Error(r.status);
+        katalog = await r.json();
+      } catch (e) {
+        $("katalog").innerHTML = '<p class="leer">Die Liste aller Folgen fehlt noch.<br>Einmal Raycast „Hörkiste · Deploy“ laufen lassen.</p>';
+        return;
+      }
+    }
+    if (!entwurf) ladeEntwurf();
+    aktualisiereKopf();
+    zeigeStudio();
+  }
+  function schliesseStudio() {
+    probe.pause();
+    studio.classList.remove("offen");
+    document.body.style.overflow = "";
+  }
+
+  function zeigeStudio() {
+    const q = $("suche").value.trim().toLowerCase();
+    const qnr = q.replace(/^#/, "");
+    const gewaehlt = new Map(entwurf.map((x) => [x.nr, x]));
+    const treffer = katalog.filter((k) => {
+      const drin = gewaehlt.has(k.nr);
+      if (filter === "an" && !drin) return false;
+      if (filter === "aus" && drin) return false;
+      if (!q) return true;
+      if (/^\d+$/.test(qnr)) return String(k.nr) === qnr;
+      const w = gewaehlt.get(k.nr);
+      return (k.titel + " " + (k.text || "") + " " + (w ? w.titel : "")).toLowerCase().includes(q);
+    });
+    const liste = $("katalog");
+    liste.innerHTML = treffer.length ? "" : '<p class="leer">Nichts gefunden.</p>';
+    const frag = document.createDocumentFragment();
+    for (const k of treffer) frag.appendChild(zeile(k, gewaehlt.get(k.nr)));
+    liste.appendChild(frag);
+  }
+
+  function zeile(k, w) {
+    const div = document.createElement("div");
+    div.className = "zeile" + (w ? " an" : "");
+    div.dataset.nr = k.nr;
+    const datum = k.datum ? " · " + new Date(k.datum).toLocaleDateString("de-DE") : "";
+    div.innerHTML = `
+      <button class="haken" aria-pressed="${!!w}" aria-label="${w ? "Aus der Kiste nehmen" : "In die Kiste legen"}">${w ? "✓" : ""}</button>
+      <div class="info">
+        <div class="kopf"><span class="nr">#${k.nr}</span> ${esc(kurzTitel(k.titel))}</div>
+        <div class="km">${minuten(k.sekunden)}${datum}</div>
+        ${k.text ? `<div class="text">${esc(k.text)}</div>` : ""}
+        ${w ? `<div class="edit">
+          <input class="e-emoji" value="${esc(w.emoji)}" aria-label="Emoji" autocomplete="off">
+          <select class="e-gruppe" aria-label="Gruppe">${daten.gruppen.map((g) =>
+            `<option value="${esc(g.id)}"${g.id === w.gruppe ? " selected" : ""}>${esc(g.emoji)} ${esc(g.titel)}</option>`).join("")}</select>
+          <input class="e-titel" value="${esc(w.titel)}" aria-label="Titel für die Kinder" autocomplete="off">
+        </div>` : ""}
+      </div>
+      <button class="probe" aria-label="Hörprobe">${probeNr === k.nr && !probe.paused ? "⏸" : "▶"}</button>`;
+
+    div.querySelector(".haken").addEventListener("click", () => {
+      if (w) entwurf = entwurf.filter((x) => x.nr !== k.nr);
+      else entwurf.push({ nr: k.nr, gruppe: daten.gruppen[0].id, emoji: "🎧", titel: kurzTitel(k.titel) });
+      sichereEntwurf();
+      const neu = zeile(k, entwurf.find((x) => x.nr === k.nr));
+      div.replaceWith(neu);
+      if (!w) neu.querySelector(".e-titel").focus({ preventScroll: true });
+    });
+    const t = div.querySelector(".text");
+    if (t) t.addEventListener("click", () => t.classList.toggle("lang"));
+    if (w) {
+      const setze = (feld, wert) => { w[feld] = wert; sichereEntwurf(); };
+      div.querySelector(".e-emoji").addEventListener("input", (e) => setze("emoji", e.target.value.trim() || "🎧"));
+      div.querySelector(".e-titel").addEventListener("input", (e) => setze("titel", e.target.value.trim() || kurzTitel(k.titel)));
+      div.querySelector(".e-gruppe").addEventListener("change", (e) => setze("gruppe", e.target.value));
+    }
+    div.querySelector(".probe").addEventListener("click", () => hoerprobe(k));
+    return div;
+  }
+
+  function hoerprobe(k) {
+    if (probeNr === k.nr && !probe.paused) { probe.pause(); return; }
+    audio.pause();
+    if (probeNr !== k.nr) { probe.src = k.audio; probeNr = k.nr; }
+    probe.play().catch(() => {});
+  }
+  const probeKnoepfe = () => {
+    for (const z of $("katalog").querySelectorAll(".zeile")) {
+      z.querySelector(".probe").textContent = +z.dataset.nr === probeNr && !probe.paused ? "⏸" : "▶";
+    }
+  };
+  ["play", "pause", "ended"].forEach((ev) => probe.addEventListener(ev, probeKnoepfe));
+
+  function exportiere() {
+    const reihenfolge = new Map(daten.gruppen.map((g, i) => [g.id, i]));
+    const sortiert = entwurf.map((x, i) => [x, i])
+      .sort((a, b) => (reihenfolge.get(a[0].gruppe) ?? 99) - (reihenfolge.get(b[0].gruppe) ?? 99) || a[1] - b[1])
+      .map(([x]) => x);
+    const z = (o) => "    " + JSON.stringify(o);
+    const txt = '{\n  "_hinweis": ' + JSON.stringify(HINWEIS) + ',\n  "gruppen": [\n'
+      + daten.gruppen.map(z).join(",\n") + '\n  ],\n  "geschichten": [\n'
+      + sortiert.map(({ nr, gruppe, emoji, titel }) => z({ nr, gruppe, emoji, titel })).join(",\n") + "\n  ]\n}\n";
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([txt], { type: "application/json" }));
+    a.download = "auswahl.json";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+    $("exportHinweis").hidden = false;
+  }
+
+  function zeigeVorschau() {
+    const km = new Map(katalog.map((k) => [k.nr, k]));
+    vorschau = {
+      ...daten,
+      geschichten: entwurf.filter((x) => km.has(x.nr))
+        .map((x) => ({ ...x, audio: km.get(x.nr).audio, sekunden: km.get(x.nr).sekunden })),
+    };
+    schliesseStudio();
+    $("vorschauBand").hidden = false;
+    zeigeListe();
+    window.scrollTo(0, 0);
+  }
+
+  $("auswaehlen").addEventListener("click", oeffneTor);
+  $("studioZu").addEventListener("click", schliesseStudio);
+  $("suche").addEventListener("input", zeigeStudio);
+  for (const b of document.querySelectorAll(".s-filter button")) {
+    b.addEventListener("click", () => {
+      filter = b.dataset.f;
+      document.querySelectorAll(".s-filter button").forEach((x) => x.classList.toggle("an", x === b));
+      zeigeStudio();
+    });
+  }
+  $("export").addEventListener("click", exportiere);
+  $("vorschauBtn").addEventListener("click", zeigeVorschau);
+  $("verwerfen").addEventListener("click", () => {
+    if (!confirm("Alle Änderungen an der Auswahl verwerfen?")) return;
+    entwurf = ausDaten(); sichereEntwurf(); zeigeStudio();
+  });
+  $("vorschauEnde").addEventListener("click", () => {
+    vorschau = null;
+    $("vorschauBand").hidden = true;
+    zeigeListe();
+    oeffneStudio();
+  });
 
   // ---------- Laden ----------
   fetch("kinder.json", { cache: "no-cache" })
